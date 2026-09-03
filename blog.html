@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NamaBrand | Blog Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav fixed w-full z-50 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">NamaBrand</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-primary transition">Beranda</a>
+                <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+                <a href="blog.html" class="hover:text-primary transition">Blog Saya</a> 
+                <a href="contact.html" class="hover:text-primary transition">Kontak</a>
+            </div>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">Blog Perjalanan Saya</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e4f0f7b5-1c7c-40b7-9a83-7042575820c4.png" alt="Ilustrasi troubleshooting jaringan komputer dengan diagram teknis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>20 Mei 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Perjalanan Belajar Video Editing</h3>
+                        <p class="text-gray-600 mb-4">Bagaimana saya memulai dan mengembangkan keterampilan video editing dari nol hingga profesional.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a36a03e0-ab00-487d-b2f7-e1a8008600c0.png" alt="Workstation ergonomis dengan peralatan IT yang teratur rapi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>15 April 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Setup Workstation IT Support yang Efisien</h3>
+                        <p class="text-gray-600 mb-4">Rekomendasi tools dan konfigurasi untuk meningkatkan produktivitas sebagai IT Support profesional.</p>
+                        <a href="#" class="text-primary font-medium hover:underline">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5925a7da-b4d7-43e0-94b6-9c1c47bc9ef1.png" alt="Diagram alur manajemen tiket support IT dengan tahapan yang jelas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>1 Maret 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Best Practices Manajemen Tiket IT Support</h3>
+                        <p class="text-gray-600 mb-4">Strategi efektif untuk menangani dan memprior
