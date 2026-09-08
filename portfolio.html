@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NamaBrand | Portfolio</title>
+    <title>tirta.notes | Portfolio</title>
+    <meta name="description" content="Kumpulan karya video editing oleh tirta.notes.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Lompat ke konten utama</a>
+
     <!-- Floating Navigation -->
     <nav class="floating-nav fixed w-full z-50 py-4 px-6">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold text-primary">NamaBrand</div>
+            <a href="index.html" class="text-2xl font-bold text-primary">tirta.notes</a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="hover:text-primary transition">Beranda</a>
                 <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
-                <a href="blog.html" class="hover:text-primary transition">Blog Saya</a> 
-                <a href="contact.html" class="hover:text-primary transition">Kontak</a>
+                <a href="blog.html" class="hover:text-primary transition">Blog</a>
+                <a href="index.html#contact" class="hover:text-primary transition">Kontak</a>
             </div>
-            <button class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu"
+                    aria-label="Buka menu navigasi"
+                    class="md:hidden p-2 -mr-2 rounded-lg hover:bg-gray-200 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </div>
+        <div id="mobile-menu" data-menu hidden
+             class="md:hidden max-w-6xl mx-auto mt-4 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href="index.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Beranda</a>
+            <a href="portfolio.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Portfolio</a>
+            <a href="blog.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Blog</a>
+            <a href="index.html#contact" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Kontak</a>
+        </div>
     </nav>
 
+    <main id="main">
     <!-- Video Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4 bg-white">
+    <section id="portfolio" class="pt-32 pb-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-16">Karya Video Editing Saya</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Video Item 1 -->
                 <div class="video-thumbnail relative rounded-lg overflow-hidden shadow-lg transition duration-300">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/685266f0-5708-4b9e-9d46-dffb74b51f08.png" alt="Preview video portfolio 1 - Proyek iklan komersial dengan efek khusus dan transisi dinamis" class="w-full h-64 object-cover">
+                    <img src="assets/video-1.svg" loading="lazy" decoding="async" alt="Preview video portfolio 1 - Proyek iklan komersial dengan efek khusus dan transisi dinamis" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                         <div class="play-icon opacity-0 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,7 +66,7 @@
                 
                 <!-- Video Item 2 -->
                 <div class="video-thumbnail relative rounded-lg overflow-hidden shadow-lg transition duration-300">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e2c81c9d-b137-4bd4-8753-bef4dcdb254e.png" alt="Preview video portfolio 2 - Dokumentasi acara perusahaan dengan editing smooth dan color grading profesional" class="w-full h-64 object-cover">
+                    <img src="assets/video-2.svg" loading="lazy" decoding="async" alt="Preview video portfolio 2 - Dokumentasi acara perusahaan dengan editing smooth dan color grading profesional" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                         <div class="play-icon opacity-0 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -68,7 +83,7 @@
                 
                 <!-- Video Item 3 -->
                 <div class="video-thumbnail relative rounded-lg overflow-hidden shadow-lg transition duration-300">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ecf90ec7-a832-4f05-9f8b-60d5d5a619f6.png" alt="Preview video portfolio 3 - Video musik dengan efek visual kreatif dan sinkronisasi sempurna dengan audio" class="w-full h-64 object-cover">
+                    <img src="assets/video-3.svg" loading="lazy" decoding="async" alt="Preview video portfolio 3 - Video musik dengan efek visual kreatif dan sinkronisasi sempurna dengan audio" class="w-full h-64 object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                         <div class="play-icon opacity-0 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -85,24 +100,26 @@
             </div>
             
             <div class="text-center mt-12">
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-secondary">
-                    Lihat Lebih Banyak Proyek
+                <a href="index.html#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-secondary transition">
+                    Diskusikan Proyek Kamu
                 </a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-8 px-4 bg-dark text-white">
         <div class="max-w-6xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-xl font-bold mb-4 md:mb-0">NamaBrand</div>
-                <div class="text-sm">
-                    © 2023 NamaBrand. Seluruh hak cipta dilindungi.
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-xl font-bold">tirta.notes</div>
+                <div class="text-sm text-gray-300">
+                    &copy; 2026 tirta.notes. Seluruh hak cipta dilindungi.
                 </div>
-                <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-primary transition">Kebijakan Privasi</a>
-                    <a href="#" class="hover:text-primary transition">Syarat Penggunaan</a>
+                <div class="flex space-x-6">
+                    <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
+                    <a href="blog.html" class="hover:text-primary transition">Blog</a>
+                    <a href="index.html#contact" class="hover:text-primary transition">Kontak</a>
                 </div>
             </div>
         </div>

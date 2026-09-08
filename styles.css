@@ -1,37 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        :root {
-            --primary: #3b82f6;
-            --secondary: #1e40af;
-            --accent: #10b981;
-            --dark: #1e293b;
-            --light: #f8fafc;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-        }
-        
-        .hero-pattern {
-            background-color: #e5e7eb;
-            background-image: radial-gradient(#3b82f6 0.5px, #e5e7eb 0.5px);
-            background-size: 10px 10px;
-        }
-        
-        .floating-nav {
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .video-thumbnail:hover .play-icon {
-            opacity: 1;
-            transform: scale(1.1);
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
+
+:root {
+    --primary: #3b82f6;
+    --secondary: #1e40af;
+    --accent: #10b981;
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Offset agar target anchor tidak tertutup nav yang fixed */
+    scroll-padding-top: 6rem;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    padding: 0.75rem 1.25rem;
+    background: var(--dark);
+    color: #fff;
+    border-radius: 0 0 0.5rem 0;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* Atribut [hidden] dan utility .flex punya spesifisitas sama, jadi urutan sheet
+   menentukan pemenangnya. !important memastikan panel menu benar-benar tersembunyi. */
+[hidden] {
+    display: none !important;
+}
+
+.hero-pattern {
+    background-color: #e5e7eb;
+    background-image: radial-gradient(#3b82f6 0.5px, #e5e7eb 0.5px);
+    background-size: 10px 10px;
+}
+
+.floating-nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail:hover .play-icon,
+.video-thumbnail:focus-within .play-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.blog-card:hover,
+.blog-card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
