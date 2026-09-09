@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tirta.notes | Blog</title>
-    <meta name="description" content="Catatan perjalanan belajar video editing dan IT Support.">
+    <title>Blog | Tirta Wihadi</title>
+    <meta name="description" content="Notes on infrastructure, networking, and video editing by Tirta Wihadi.">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-    <a href="#main" class="skip-link">Lompat ke konten utama</a>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- Floating Navigation -->
     <nav class="floating-nav fixed w-full z-50 py-4 px-6">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-primary">tirta.notes</a>
             <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="hover:text-primary transition">Beranda</a>
+                <a href="index.html" class="hover:text-primary transition">Home</a>
                 <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
                 <a href="blog.html" class="hover:text-primary transition">Blog</a>
-                <a href="index.html#contact" class="hover:text-primary transition">Kontak</a>
+                <a href="index.html#contact" class="hover:text-primary transition">Contact</a>
             </div>
             <button type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu"
-                    aria-label="Buka menu navigasi"
+                    aria-label="Open navigation menu"
                     class="md:hidden p-2 -mr-2 rounded-lg hover:bg-gray-200 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -31,72 +31,24 @@
         </div>
         <div id="mobile-menu" data-menu hidden
              class="md:hidden max-w-6xl mx-auto mt-4 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
-            <a href="index.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Beranda</a>
+            <a href="index.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Home</a>
             <a href="portfolio.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Portfolio</a>
             <a href="blog.html" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Blog</a>
-            <a href="index.html#contact" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Kontak</a>
+            <a href="index.html#contact" class="px-6 py-3 hover:bg-gray-50 hover:text-primary transition">Contact</a>
         </div>
     </nav>
 
     <main id="main">
-    <!-- Blog Section -->
-    <section id="blog" class="pt-32 pb-20 px-4 bg-white">
+    <section id="blog" class="pt-32 pb-20 px-4 bg-white min-h-screen">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-16">Blog Perjalanan Saya</h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Blog Post 1 -->
-                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="assets/blog-1.svg" loading="lazy" decoding="async" alt="Ilustrasi troubleshooting jaringan komputer dengan diagram teknis" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <span>20 Mei 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>5 min read</span>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Perjalanan Belajar Video Editing</h3>
-                        <p class="text-gray-600 mb-4">Bagaimana saya memulai dan mengembangkan keterampilan video editing dari nol hingga profesional.</p>
-                        <!-- TODO: ganti dengan <a href="posts/judul-artikel.html"> saat artikel sudah ditulis -->
-                        <span class="text-gray-400 font-medium">Segera hadir</span>
-                    </div>
-                </div>
-                
-                <!-- Blog Post 2 -->
-                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="assets/blog-2.svg" loading="lazy" decoding="async" alt="Workstation ergonomis dengan peralatan IT yang teratur rapi" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <span>15 April 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>4 min read</span>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Setup Workstation IT Support yang Efisien</h3>
-                        <p class="text-gray-600 mb-4">Rekomendasi tools dan konfigurasi untuk meningkatkan produktivitas sebagai IT Support profesional.</p>
-                        <!-- TODO: ganti dengan <a href="posts/judul-artikel.html"> saat artikel sudah ditulis -->
-                        <span class="text-gray-400 font-medium">Segera hadir</span>
-                    </div>
-                </div>
-                
-                <!-- Blog Post 3 -->
-                <div class="blog-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="assets/blog-3.svg" loading="lazy" decoding="async" alt="Diagram alur manajemen tiket support IT dengan tahapan yang jelas" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 mb-2">
-                            <span>1 Maret 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>6 min read</span>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Best Practices Manajemen Tiket IT Support</h3>
-                        <p class="text-gray-600 mb-4">Strategi efektif untuk menangani dan memprioritaskan tiket support tanpa kehilangan kendali.</p>
-                        <!-- TODO: ganti dengan <a href="posts/judul-artikel.html"> saat artikel sudah ditulis -->
-                        <span class="text-gray-400 font-medium">Segera hadir</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="index.html#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-secondary transition">
-                    Punya pertanyaan? Hubungi saya
+            <h1 class="text-4xl font-bold text-center mb-4">Writing</h1>
+            <p class="text-center text-gray-600 mb-12">Notes on infrastructure, networking, and editing.</p>
+
+            <div class="max-w-2xl mx-auto text-center border-2 border-dashed border-gray-300 rounded-xl py-20 px-8">
+                <p class="text-2xl font-semibold text-dark mb-3">Coming soon</p>
+                <p class="text-gray-600 mb-8">The first articles are in progress.</p>
+                <a href="index.html#contact" class="inline-flex items-center px-6 py-3 rounded-md text-base font-medium text-white bg-primary hover:bg-secondary transition">
+                    Get in touch
                 </a>
             </div>
         </div>
@@ -109,12 +61,12 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <div class="text-xl font-bold">tirta.notes</div>
                 <div class="text-sm text-gray-300">
-                    &copy; 2026 tirta.notes. Seluruh hak cipta dilindungi.
+                    &copy; 2026 Tirta Wihadi. All rights reserved.
                 </div>
                 <div class="flex space-x-6">
                     <a href="portfolio.html" class="hover:text-primary transition">Portfolio</a>
                     <a href="blog.html" class="hover:text-primary transition">Blog</a>
-                    <a href="index.html#contact" class="hover:text-primary transition">Kontak</a>
+                    <a href="index.html#contact" class="hover:text-primary transition">Contact</a>
                 </div>
             </div>
         </div>
