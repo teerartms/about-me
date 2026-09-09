@@ -1,0 +1,4 @@
+node_modules/
+
+# Catatan topologi internal (LXC, subnet, port admin). Repo ini publik.
+KONTEKS-HANDOFF.md

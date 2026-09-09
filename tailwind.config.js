@@ -1,7 +1,6 @@
-/* Mendaftarkan palet brand ke Tailwind CDN.
-   Harus dimuat sinkron tepat setelah cdn.tailwindcss.com, sebelum <body> diparse,
-   agar utility seperti bg-primary / text-dark ikut ter-generate. */
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ['./*.html', './script.js'],
     theme: {
         extend: {
             colors: {
@@ -15,5 +14,6 @@ tailwind.config = {
                 sans: ['Poppins', 'Segoe UI', 'system-ui', 'sans-serif']
             }
         }
-    }
+    },
+    plugins: []
 };
